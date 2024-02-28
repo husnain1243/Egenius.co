@@ -28,7 +28,7 @@ export const BlogCards = () => {
                                                 <div key={index} className="card overflow-hidden text-center rounded bg-transparent text-dark border-0">
                                                     <figure className="snip1529">
                                                         <div className="image-container">
-                                                        <img src={data.image} alt={data.name + "image"} className="m-auto d-block img-fluid w-100 h-100"/>
+                                                            <img src={data.image} alt={data.name + "image"} className="m-auto d-block img-fluid w-100 h-100"/>
                                                         </div>
                                                         <div className="date"><span class="day text-dark mb-2">{data.price}$</span><span className="month text-dark">Price</span></div>
                                                         <figcaption>
