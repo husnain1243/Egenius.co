@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { Home } from "../pages/Home";
+import { AniPage } from "../pages/AniPage";
 import { Services } from "../pages/Services"
 import { Projects } from "../pages/Projects"
 import { ContactUs } from "../pages/ContactUs"
@@ -11,6 +12,9 @@ export const AppRoutes = () => {
       <Routes>
         <Route path="/" element={<Home/>}>
           Home
+        </Route>
+        <Route path="/anipage" element={<AniPage/>}>
+          AniPage
         </Route>
         <Route path="/services" element={<Services/>}>
           Services

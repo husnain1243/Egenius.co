@@ -311,6 +311,38 @@ a:hover{
   color: #fff !important;
 }
 
+/* AniPage */
+#AniPage .typewriter {
+  width: 60%;  
+  margin: 0 auto;
+}
+#AniPage h1 {
+  overflow: hidden;
+  margin: 0 auto;
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+}
+#AniPage h1 span{
+  color: #000000;
+}
+#AniPage h1:after{
+  content: '';
+  display: inline-block;
+  background-color: white;
+  margin-left: 2px;
+  height: 30px;
+  width: 4px;
+  animation: cursor 0.4s infinite;
+}
+@keyframes cursor {
+  0% { opacity: 1; }
+  49% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+
 @media only screen and (min-width: 767.98px){
   #portfolio .section-portfolio-row::before{
       content: "";
