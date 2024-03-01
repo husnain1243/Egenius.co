@@ -9,22 +9,27 @@ export const Navbar = () => {
     {
       path: "/LandingPage",
       name: "Future",
+      target: "_blank"
     },
     {
       path: "/",
       name: "Home",
+      target: ""
     },
     {
       path: "/services",
       name: "Services",
+      target: ""
     },
     {
       path: "/projects",
       name: "Projects",
+      target: ""
     },
     {
       path: "/contact-us",
       name: "Contact Us",
+      target: ""
     },
   ];
   const [routeDate] = useState(Route);
@@ -60,7 +65,7 @@ export const Navbar = () => {
                     {routeDate.map(({ name, path }, index) => {
                       return (
                           <li key={index}>
-                            <Link to={path} className="link text-decoration-none text-white">{name}</Link>
+                            <Link to={path} target={target} className="link text-decoration-none text-white">{name}</Link>
                           </li>
                       );
                     })}
