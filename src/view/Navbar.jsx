@@ -57,7 +57,7 @@ export const Navbar = () => {
               </div>
               <div className="offcanvas-body">
                 <ul className="d-flex flex-column justify-content-center gap-3 list-unstyled m-0">
-                    {routeDate.map(({ name, path }, index) => {
+                    {routeDate.map(({ name, path, target  }, index) => {
                       return (
                           <li key={index}>
                             <Link to={path} target={target} className="link text-decoration-none text-white">{name}</Link>
