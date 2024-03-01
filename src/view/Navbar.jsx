@@ -12,11 +12,6 @@ export const Navbar = () => {
       target: "_blank"
     },
     {
-      path: "/",
-      name: "Home",
-      target: ""
-    },
-    {
       path: "/services",
       name: "Services",
       target: ""
