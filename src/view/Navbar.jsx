@@ -7,7 +7,7 @@ import "../Style/style.css"
 export const Navbar = () => {
   const Route = [
     {
-      path: "/",
+      path: "/Home",
       name: "Home",
     },
     {
@@ -30,7 +30,7 @@ export const Navbar = () => {
           <div className="container-fluid px-4">
             <div className="logo">
               <div className="logo-container" style={{width: "50px"}}>
-                <Link to="/" className="link text-decoration-none text-white">
+                <Link to="/Home" className="link text-decoration-none text-white">
                   <img src={Logo} alt="logo" className="d-block img-fluid m-auto w-100 h-100"/>
                 </Link>
                 <p className="m-0 p-0">Egenius</p>
@@ -43,7 +43,7 @@ export const Navbar = () => {
               <div className="offcanvas-header">
                   <div className="logo">
                     <div className="logo-container" style={{width: "50px"}}>
-                      <Link to="/" className="link text-decoration-none text-white">
+                      <Link to="/Home" className="link text-decoration-none text-white">
                         <img src={Logo} alt="logo" className="d-block img-fluid m-auto w-100 h-100"/>
                       </Link>
                       <p className="m-0 p-0">Egenius</p>

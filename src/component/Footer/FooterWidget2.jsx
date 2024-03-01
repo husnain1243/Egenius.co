@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const FooterWidget2 = () => {
     const Route = [
         {
-          path: "/",
+          path: "/Home",
           name: "Home",
         },
         // {
@@ -28,7 +28,7 @@ export const FooterWidget2 = () => {
     return(
         <div className="col-12 col-md-6 col-lg-4 col-xl-5 mb-4">
             <div className="" style={{width: "110px"}}>
-              <Link to="/" className="link text-decoration-none text-white">
+              <Link to="/Home" className="link text-decoration-none text-white">
                 <img src={Logo} alt="footer-image" className="d-block image-fluid w-100 h-100"/>
               </Link>
                 
