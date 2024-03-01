@@ -11,7 +11,7 @@ function App() {
  }, []);
   return (
     <div> 
-      {/* {isLoading ? (
+      {isLoading ? (
         <div className='loader-container'>
           <div className="spinner-box">
           <div className="blue-orbit leo">
@@ -29,9 +29,9 @@ function App() {
           </div>
         </div>
         </div>
-      ) : ( */}
+      ) : (
         <AppLayout />
-      {/* )} */}
+      )}
     </div>
   );
 }

@@ -7,7 +7,7 @@ import "../Style/style.css"
 export const Navbar = () => {
   const Route = [
     {
-      path: "/Home",
+      path: "/",
       name: "Home",
     },
     {

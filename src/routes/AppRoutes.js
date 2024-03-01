@@ -10,10 +10,10 @@ export const AppRoutes = () => {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<LandingPage/>}>
+        {/* <Route path="/" element={<LandingPage/>}>
           AniPage
-        </Route>
-        <Route path="/home" element={<Home/>}>
+        </Route> */}
+        <Route path="/" element={<Home/>}>
           Home
         </Route>
         <Route path="/services" element={<Services/>}>
