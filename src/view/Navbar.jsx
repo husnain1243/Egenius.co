@@ -7,9 +7,14 @@ import "../Style/style.css"
 export const Navbar = () => {
   const Route = [
     {
-      path: "/LandingPage",
+      path: "/home",
+      name: "Home",
+      target: ""
+    },
+    {
+      path: "/",
       name: "Future",
-      target: "_blank"
+      target: ""
     },
     {
       path: "/services",
