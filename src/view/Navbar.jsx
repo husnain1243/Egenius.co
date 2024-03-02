@@ -12,11 +12,6 @@ export const Navbar = () => {
       target: ""
     },
     {
-      path: "/",
-      name: "Future",
-      target: ""
-    },
-    {
       path: "/services",
       name: "Services",
       target: ""
