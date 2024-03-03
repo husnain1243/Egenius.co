@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from '../asserts/EgeniusLogo.png';
+import { useLocation } from 'react-router-dom';
 
 import "../Style/style.css"
 
@@ -28,6 +29,7 @@ export const Navbar = () => {
     },
   ];
   const [routeDate] = useState(Route);
+  const location = useLocation();
   return (
     <header>
         <nav className="d-block d-lg-none navbar navbar-light bg-dark">
@@ -56,10 +58,10 @@ export const Navbar = () => {
                 <button type="button" className="btn-close text-reset bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               <div className="offcanvas-body">
-                <ul className="d-flex flex-column justify-content-center gap-3 list-unstyled m-0">
+                <ul id="myList" className="d-flex flex-column justify-content-center gap-3 list-unstyled m-0">
                     {routeDate.map(({ name, path, target  }, index) => {
                       return (
-                          <li key={index}>
+                          <li key={index} className={location.pathname === path ? 'active' : ''}>
                             <Link to={path} target={target} className="link text-decoration-none text-white">{name}</Link>
                           </li>
                       );
@@ -84,7 +86,7 @@ export const Navbar = () => {
               <ul className="d-flex flex-row justify-content-center gap-3 list-unstyled m-0">
                   {routeDate.map(({ name, path }, index) => {
                     return (
-                        <li key={index}>
+                        <li key={index} className={location.pathname === path ? 'active' : ''}>
                           <Link to={path} className="link text-decoration-none text-white">{name}</Link>
                         </li>
                     );

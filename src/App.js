@@ -1,6 +1,9 @@
 import React, { useState  , useEffect} from 'react';
 import { AppLayout } from "./layout/AppLayout";
+import { useLocation } from 'react-router-dom';
+
 function App() {
+  const location = useLocation();
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -11,7 +14,7 @@ function App() {
  }, []);
   return (
     <div> 
-      {isLoading ? (
+      {isLoading && location.pathname != '/' ? (
         <div className='loader-container'>
           <div className="spinner-box">
           <div className="blue-orbit leo">

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Logo from '../../asserts/EgeniusLogo.png';
 import { Link } from "react-router-dom";
+import { useLocation } from 'react-router-dom';
+
 export const FooterWidget2 = () => {
     const Route = [
         {
@@ -25,6 +27,7 @@ export const FooterWidget2 = () => {
         },
       ];
       const [routeDate] = useState(Route);
+      const location = useLocation();
     return(
         <div className="col-12 col-md-6 col-lg-4 col-xl-5 mb-4">
             <div className="" style={{width: "110px"}}>
@@ -37,7 +40,7 @@ export const FooterWidget2 = () => {
                 <ul className="list-unstyled d-flex flex-column flex-md-row flex-wrap gap-3 m-0"  style={{fontSize: "18px"}}>
                     {routeDate.map(({ name, path }, index) => {
                         return (
-                            <li key={index}>
+                            <li key={index} className={location.pathname === path ? 'active' : ''}>
                                 <Link to={path} className="link text-decoration-none text-white">{name}</Link>
                             </li>
                         );

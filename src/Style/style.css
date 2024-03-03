@@ -341,6 +341,11 @@ a:hover{
   50% { opacity: 0; }
   100% { opacity: 0; }
 }
+.footer ul .active a,
+nav ul .active a{
+  color: #e8bd81dc !important;
+  text-decoration: underline !important;
+}
 
 
 @media only screen and (min-width: 767.98px){
