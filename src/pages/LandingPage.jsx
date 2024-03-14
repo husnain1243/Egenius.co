@@ -3,8 +3,7 @@ import '../Style/style.css'
 
 export const LandingPage = () => {
     return(
-        <div id="AniPage" className="contact-wrapper">
-            
+        <div id="AniPage" className="contact-wrapper"> 
             <div className="anipage-section position-fixed top-0 w-100 bg-dark" style={{zindex: 10 , height: '100vh'}}>
                 <iframe
                     src="https://husnain1243.github.io/EgeniusAdvance/"
@@ -13,7 +12,6 @@ export const LandingPage = () => {
                     title="External Website"
                 />
             </div>
-
         </div>
     )
 }
