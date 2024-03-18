@@ -7,7 +7,7 @@ export const FormSubmitted = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      navigate('/');
+      navigate('/home');
     }, 5000);
     return () => clearTimeout(timer);
   }, [navigate]);
