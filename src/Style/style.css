@@ -350,6 +350,37 @@ nav ul .active a{
   color: #e8bd81dc !important;
   text-decoration: underline !important;
 }
+.main-service-container .image-container,
+.Strategy .Strategy-Image-Img,
+.Vision-section .Vision-Image-container{
+  overflow: hidden;
+}
+.main-service-container .image-container img,
+.Strategy .Strategy-Image-Img img,
+.Vision-section .Vision-Image-container img{
+  transition: transform 0.3s ease;
+}
+.Strategy .Strategy-Image-Img img:hover,
+.Vision-section .Vision-Image-container img:hover{
+  animation: shake 0.5s;
+  cursor: pointer;
+}
+@keyframes shake {
+  10% { transform: translate(1px, 1px) rotate(0.1deg); }
+  20% { transform: translate(-1px, -2px) rotate(-0.2deg); }
+  30% { transform: translate(-3px, 0px) rotate(0.3deg); }
+  40% { transform: translate(3px, 2px) rotate(0.5deg); }
+  50% { transform: translate(1px, -1px) rotate(-0.1deg); }
+  60% { transform: translate(-1px, 2px) rotate(0.2deg); }
+  70% { transform: translate(2px, 1px) rotate(-0.3deg); }
+  80% { transform: translate(-1px, -1px) rotate(0.4deg); }
+  90% { transform: translate(1px, 2px) rotate(-0.5deg); }
+  100% { transform: translate(1px, -2px) rotate(0deg); }
+}
+.main-service-container .image-container img:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
 
 
 @media only screen and (min-width: 767.98px){
@@ -432,6 +463,8 @@ nav ul .active a{
         height: 100vh;
     }
 }
+
+
 
 
 /* loader */
