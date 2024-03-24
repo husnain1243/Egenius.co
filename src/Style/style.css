@@ -381,8 +381,17 @@ nav ul .active a{
   transform: scale(1.1);
   cursor: pointer;
 }
-
-
+header{
+  background-color: #212529;
+  height: 85px;
+}
+.navbar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 20;
+  background-color: #212529e6 !important;
+}
 @media only screen and (min-width: 767.98px){
   #portfolio .section-portfolio-row::before{
       content: "";
